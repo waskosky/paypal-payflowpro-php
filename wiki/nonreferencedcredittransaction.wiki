@@ -1,6 +1,6 @@
 For non-referenced credit try to modify the "credit trasaction" function to this: 
 Credit goes to Corey Huinker.  
- 
+{{{ 
  function credit_transaction($origid,$acct = '', $expdate = '',$amt = '') { 
  
 if ((strlen($origid) < 3) && ($origid != 'NR')) { 
@@ -28,3 +28,5 @@ $plist .= 'AMT=' . $amt . '&';
 }else { 
 $plist .= 'ORIGID=' . $origid . '&'; // ORIGID to the PNREF value returned from the original transaction 
 } 
+
+}}}
